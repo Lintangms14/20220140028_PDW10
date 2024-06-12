@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pendaftaran Tournament Genshin Impact</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="brand">
+                <a href="#">Spiral Abyss Tournament Genshin Impact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h3>Form Pendaftaran</h3>
+        </div>
+        <div class="info-box">
+            <p>Harap isi formulir di bawah ini untuk mendaftar dalam turnamen Genshin Impact.</p>
+            <p>Pastikan untuk mengisi semua kolom dengan informasi yang benar.</p>
+            <p>Jika Anda memiliki pertanyaan, jangan ragu untuk menghubungi kami di <a href="mailto:tournament@example.com">Lintang@gmail.com</a>.</p>
+        </div>
+        <form action="">
+            <label for="nama">Nickname</label>
+            <input type="text" placeholder="Nama anda" id="nama">
+            <label for="uid">UID</label>
+            <input type="text" placeholder="UID Genshin Impact anda" id="uid">
+            <label for="server">Server</label>
+            <select id="server" name="server">
+                <option value="asia">Asia</option>
+                <option value="america">America</option>
+                <option value="europe">Europe</option>
+                <option value="tw_hk_mo">TW, HK, MO</option>
+            </select>
+            <label for="team">Team</label>
+            <textarea placeholder="Masukkan anggota tim anda" name="team" id="team" cols="30" rows="5"></textarea>
+            <label for="tahun">Tahun Pendaftaran Tournament</label>
+            <select id="tahun" name="tahun">
+                <option value="2023">2024</option>
+                <option value="2024">2025</option>
+                <option value="2025">2026</option>
+            </select>
+            <label for="tanggal">Tanggal Pendaftaran Tournament</label>
+            <input type="date" id="tanggal">
+            <button type="button" onclick="kirimData()">Kirim</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
